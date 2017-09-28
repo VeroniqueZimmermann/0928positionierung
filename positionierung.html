@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>unbenanntes Dokument</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #FF00FF;
+        }
+
+        #div1 {
+            position: absolute;
+            /*nimmt den Container aus dem Dokumentenfluss heraus*/
+            top: 30px;
+            left: 30px;
+            width: 55%;
+            height: 55%;
+            color: aliceblue;
+            border: 1px solid lawngreen;
+            background-color: purple;
+            /*z-index: 100;*/
+            /*hilft bei EINEM absolute nicht, bei mehreren ja*/
+            z-index: 0;
+        }
+
+        #div1:hover + div {
+            z-index: -1;
+            color: saddlebrown;
+        }
+
+        #div2 {
+            position: absolute;
+            /*nimmt den Container aus dem Dokumentenfluss heraus*/
+            top: 40%;
+            left: 40%;
+            width: 55%;
+            height: 55%;
+            color: aliceblue;
+            border: 1px solid purple;
+            background-color: lawngreen;
+            /*z-index: 100;*/
+            /*hilft bei EINEM absolute nicht, bei mehreren ja*/
+            z-index: 0;
+        }
+
+        #div2:hover {
+            position: relative;
+            top: 150px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h5></h5><br>
+
+    <div id="div1" /*onmouseover="alert('Jetzt per JS etwas tun')" */>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.
+    »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
+    <div id="div2">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.
+        »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen
+        Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
+
+    <div>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie
+    ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung
+    ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper
+    dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem
+    gewissermaßen bewundernden Blick den</div>
+
+
+</body>
+
+</html>
