@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Table hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #FF00FF;
+        }
+        
+        td {
+            width: 40px;
+            height: 40px;
+            border: 1px solid blue;
+            }
+        
+        [class="dia"]:hover /*geht genauso, wie .dia*/ {
+            background-color: lightseagreen;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr><td class="dia"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td class="dia"></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td class="dia"></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="dia"></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td class="dia"></td></tr>
+    </table>
+
+</body>
+
+</html>
